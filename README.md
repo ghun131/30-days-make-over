@@ -2,7 +2,7 @@
 
 ## User story:
 
-1, intro
+1, intro: Step by step guidline to move on with break up
 
 2, the journey map: 12 milestones
 
