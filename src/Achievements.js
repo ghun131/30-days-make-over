@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-const achievements = () => (
-  <div>
-    <h2>Achievements</h2>
-  </div>
-);
+class achievements extends Component {
+  render() {
+    return (
+      <div>
+        <h1 className="achievement">Achievements</h1>
+      </div>
+    );
+  }
+}
 
 export default achievements;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import "./style.css";
-import {Box} from 'bloomer';
+import { Box } from "bloomer";
 import "bulma/css/bulma.css";
 
 class Story extends Component {
@@ -10,21 +10,53 @@ class Story extends Component {
       <div>
         <h1 className="story-header">Story</h1>
         <Box>
-          <p>Ever wondered what happens to your mind and body when you go through a break-up? Take a look at the top 10 scientific symptoms of heartbreak to find out whether you’ve been struck by broken heart syndrome
-
-    We’ve all had that sucker punch feeling in the pit of your stomach during a break-up, but how does your body really react to heartbreak? It’s actually more severe than you might think, with an effect that’s similar to the kind of chemical withdrawal you might experience when you give up smoking. The average person can expect a range of physical and mental effects to strike for what feels like forever (or at least 26 days!)
-
-    Broken heart syndrome, as it’s often known, is a condition brought on by acute stress. It can actually mimic the signs and symptoms of a heart attack, thanks to the high levels of adrenaline circulating around the body. If this sounds familiar, then you’re not alone; a survey we carried out here at eHarmony.co.uk showed that eight million UK adults have experience some form of heart break in the last 12 months, and 74% of them battling some kind of negative symptoms as a result.
-
-    Your mental health is normally the first thing to take a hit. A third of broken-hearted people go through periods of loneliness, depression and decreased levels of motivation after a break-up, while skin problems, headaches and general pain were common physical afflictions. And how do we cope? Focusing on work, exercising and spending time with friends and family were some of the more positive coping methods that our survey unearthed, with comfort food, TV binges and diving straight back into the arms of an ex were more questionable options – especially as 50% of people immediately regretted it!
-
-    But why does this happen? We turned to eHarmony’s resident expert Dr. Linda Papadopoulos for answers. ‘When you’re in love, a hormone called dopamine floods your brain along the same pathway that nicotine does and makes you feel good. But as it drops away, you want more,’ she explains. ‘There’s a well-documented link with withdrawal symptoms and a loss of appetite and increase in headaches, insomnia and depression. A withdrawal craving for the partner that really hurt you is the same craving as you’d have for the cigarette that you know will cause you serious ham in the long run.’
-
-    So, what becomes of the broken hearted? Here are the top 10 symptoms you’ll likely experience – and why!</p>
+          <p>
+            Ever wondered what happens to your mind and body when you go through
+            a break-up? Take a look at the top 10 scientific symptoms of
+            heartbreak to find out whether you’ve been struck by broken heart
+            syndrome We’ve all had that sucker punch feeling in the pit of your
+            stomach during a break-up, but how does your body really react to
+            heartbreak? It’s actually more severe than you might think, with an
+            effect that’s similar to the kind of chemical withdrawal you might
+            experience when you give up smoking. The average person can expect a
+            range of physical and mental effects to strike for what feels like
+            forever (or at least 26 days!) Broken heart syndrome, as it’s often
+            known, is a condition brought on by acute stress. It can actually
+            mimic the signs and symptoms of a heart attack, thanks to the high
+            levels of adrenaline circulating around the body. If this sounds
+            familiar, then you’re not alone; a survey we carried out here at
+            eHarmony.co.uk showed that eight million UK adults have experience
+            some form of heart break in the last 12 months, and 74% of them
+            battling some kind of negative symptoms as a result. Your mental
+            health is normally the first thing to take a hit. A third of
+            broken-hearted people go through periods of loneliness, depression
+            and decreased levels of motivation after a break-up, while skin
+            problems, headaches and general pain were common physical
+            afflictions. And how do we cope? Focusing on work, exercising and
+            spending time with friends and family were some of the more positive
+            coping methods that our survey unearthed, with comfort food, TV
+            binges and diving straight back into the arms of an ex were more
+            questionable options – especially as 50% of people immediately
+            regretted it! But why does this happen? We turned to eHarmony’s
+            resident expert Dr. Linda Papadopoulos for answers. ‘When you’re in
+            love, a hormone called dopamine floods your brain along the same
+            pathway that nicotine does and makes you feel good. But as it drops
+            away, you want more,’ she explains. ‘There’s a well-documented link
+            with withdrawal symptoms and a loss of appetite and increase in
+            headaches, insomnia and depression. A withdrawal craving for the
+            partner that really hurt you is the same craving as you’d have for
+            the cigarette that you know will cause you serious ham in the long
+            run.’ So, what becomes of the broken hearted? Here are the top 10
+            symptoms you’ll likely experience – and why!
+          </p>
         </Box>
 
-        <div className="start-button">
-        <a href="/challenges" className="button is-success start-button">Let's start</a>
+        <div className="wrapper">
+          <div className="start-button">
+            <a href="/challenges" className="button is-success">
+              Let's start
+            </a>
+          </div>
         </div>
       </div>
     );
