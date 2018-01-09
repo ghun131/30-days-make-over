@@ -1,76 +1,56 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  IndexRoute
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "bulma/css/bulma.css";
 import AboutUs from "./AboutUs.js";
 import Story from "./Stories.js";
 import JourneyMap from "./JourneyMap.js";
 import challenges from "./Challenges.js";
 import achievements from "./Achievements.js";
 import ContactUs from "./ContactUs.js";
+import logo from "./logo.svg";
 
-const stories = ({ match }) => (
-  <div>
-    <h2>Stories</h2>
-    <ul>
-      <li>
-        <Link to={`${match.url}/rendering`}>Rendering with React</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/components`}>Components</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-      </li>
-    </ul>
+class App extends Component {
+  render() {
+    return (
+      
+      <Router>
+        <div>
+          <nav class="navbar is-white is-fixed-top">
+            <div id="navigationBar" class="navbar-menu">
+              <a class="navbar-item">
+                <Link to="/">About us</Link>
+              </a>
+              <a class="navbar-item">
+                <Link to="/JourneyMap">Journey map</Link>
+              </a>
+              <a class="navbar-item">
+                <Link to="/Story">Stories</Link>
+              </a>
+              <a class="navbar-item">
+                <Link to="/challenges">Challenges</Link>
+              </a>
+              <a class="navbar-item">
+                <Link to="/achievements">Achievements</Link>
+              </a>
+              <a class="navbar-item">
+                <Link to="/ContactUs">Contact us</Link>
+              </a>
+            </div>
+          </nav>
 
-    <Route path={`${match.url}/:storyId`} component={Story} />
-    <Route
-      exact
-      path={match.url}
-      render={() => <h3>Please select a story.</h3>}
-    />
-  </div>
-);
+          <hr />
 
-const App = () => (
-  <Router>
-    <div>
-      <ul>
-        <li>
-          <Link to="/">About us</Link>
-        </li>
-        <li>
-          <Link to="/JourneyMap">Journey map</Link>
-        </li>
-        <li>
-          <Link to="/stories">Stories</Link>
-        </li>
-        <li>
-          <Link to="/challenges">Challenges</Link>
-        </li>
-        <li>
-          <Link to="/achievements">Achievements</Link>
-        </li>
-        <li>
-          <Link to="/ContactUs">Contact Us</Link>
-        </li>
-      </ul>
+          <Route exact path="/" component={AboutUs} />
+          <Route path="/JourneyMap" component={JourneyMap} />
+          <Route path="/Story" component={Story} />
+          <Route path="/challenges" component={challenges} />
+          <Route path="/achievements" component={achievements} />
+          <Route path="/ContactUs" component={ContactUs} />
+        </div>
+      </Router>
+    );
+  }
+}
 
-      <hr />
-
-      <Route exact path="/" component={AboutUs} />
-      <Route path="/JourneyMap" component={JourneyMap} />
-      <Route path="/stories" component={stories} />
-      <Route path="/challenges" component={challenges} />
-      <Route path="/achievements" component={achievements} />
-      <Route path="/ContactUs" component={ContactUs} />
-    </div>
-  </Router>
-);
 export default App;
