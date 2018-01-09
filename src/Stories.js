@@ -1,7 +1,8 @@
 import React from "react";
 import { Component } from "react";
-import "./stories.css";
+import "./style.css";
 import {Box} from 'bloomer';
+import "bulma/css/bulma.css";
 
 class Story extends Component {
   render() {
@@ -21,7 +22,10 @@ class Story extends Component {
 
     So, what becomes of the broken hearted? Here are the top 10 symptoms you’ll likely experience – and why!</p>
         </Box>
-        <button className="button">Let's start</button>
+
+        <div className="start-button">
+        <a href="/challenges" className="button is-success start-button">Let's start</a>
+        </div>
       </div>
     );
   }
