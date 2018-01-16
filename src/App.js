@@ -6,9 +6,7 @@ import AboutUs from "./AboutUs.js";
 import Story from "./Stories.js";
 import challenges from "./Challenges.js";
 import achievements from "./Achievements.js";
-import Challenge1 from "./Challenge1.js";
-import Challenge2 from "./Challenge2.js";
-import Challenge3 from "./Challenge3.js";
+import JourneyMap from "./JourneyMap.js";
 
 class App extends Component {
   render() {
@@ -26,6 +24,9 @@ class App extends Component {
               <Link className="navbar-item" to="/challenges">
                 Challenges
               </Link>
+              <Link className="navbar-item" to="/JourneyMap">
+                Journey Map
+              </Link>
               <Link className="navbar-item" to="/achievements">
                 Achievements
               </Link>
@@ -37,10 +38,8 @@ class App extends Component {
           <Route exact path="/" component={AboutUs} />
           <Route path="/Story" component={Story} />
           <Route path="/challenges" component={challenges} />
+          <Route path="/JourneyMap" component={JourneyMap} />
           <Route path="/achievements" component={achievements} />
-          <Route path="/Challenge1" component={Challenge1} />
-          <Route path="/Challenge2" component={Challenge2} />
-          <Route path="/Challenge3" component={Challenge3} />
         </div>
       </Router>
     );
