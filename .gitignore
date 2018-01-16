@@ -1,0 +1,47 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+src/Challenge2.js
+*.js
+*.js
+*.js
+src/Challenge3.js
+src/Challenge2.js
+src/App.js
+src/Challenges.js
+src/Challenge3.js
+src/style.css
+src/JourneyMap.js
+src/App.js
+src/App.js
+src/Challenge3.js
+src/Challenges.js
+src/Challenge2.js
+package.json
+src/logo.svg
+public/favicon.ico
+public/index.html
+public/manifest.json
+README.md
+src/App.css
+src/index.css
+yarn.lock
+README.md
