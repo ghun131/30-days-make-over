@@ -1,29 +1,36 @@
 import React, { Component } from "react";
-import Challenge1 from "./Challenge1";
-import Challenge2 from "./Challenge2";
-import Challenge3 from "./Challenge3";
+import ChallengeApi from "./api.js";
+import { Container } from 'bloomer';
+import ChallengesList from "./ChallengesList.js"
 
 class challenges extends Component {
+  constructor (props) {
+    super (props);
+    this.state = {isChallengeXVisible: false};
+  }
+
+  handleClick() {
+    (e) => {
+      e.preventDefault()
+      this.setState(
+       {isChallengeXVisible: true,
+        ChallengeApi}
+      )
+    }
+  }
+
   render() {
     return (
-      <div>
+      <Container>
         <h1 className="challenges">Challenges</h1>
         <div className="list-wrapper">
           <div className="list-style">
-            <ul>
-              <li>
-                <a href="/Challenge1">Hang out with your friends</a>
-              </li>
-              <li>
-                <a href="/Challenge2">Have a pet</a>
-              </li>
-              <li>
-                <a href="/Challenge3">Travel to a distant place</a>
-              </li>
-            </ul>
+            <Container>
+              <ChallengesList ChallengeApi = {ChallengeApi}/>
+            </Container>
           </div>
         </div>
-      </div>
+      </Container>
     );
   }
 }
