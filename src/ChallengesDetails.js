@@ -7,19 +7,14 @@ export default class ChallengesDetails extends Component {
     this.state = {
       textValue: props.ChallengeApi.name
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  /*
   handleClick() {
-    () => {
-      e.preventDefault()
-      this.setState({
-        isChallengeXVisible: true,
+    () => this.setState({
         textValue: this.props.ChallengeApi.text
       })
-    }
   }
-  */
 
   render() {
     return (
