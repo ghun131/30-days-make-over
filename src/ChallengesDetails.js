@@ -16,6 +16,7 @@ export default class ChallengesDetails extends Component {
       })
   }
 
+  // I change my mind and add a new message.
   render() {
     return (
       <div>
