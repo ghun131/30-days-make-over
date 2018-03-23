@@ -16,7 +16,7 @@ export default class ChallengesDetails extends Component {
       })
   }
 
-  // something for github
+  // I change my mind and add a new message.
   render() {
     return (
       <div>
